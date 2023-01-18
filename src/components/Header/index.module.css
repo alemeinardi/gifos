@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  background-color: #6809e1;
+  height: 7px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 20px;
+}
+
+button {
+  font-weight: 900;
+  font-size: 0.9rem;
+  width: 148px;
+  height: 43px;
+  border-radius: 20px;
+  border: 1px solid #6809e1;
+  color: #6809e1;
+  background-color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #50e3c2;
+  border: none;
+}
