@@ -10,6 +10,8 @@ h1 {
   color: #572ee5;
   padding-bottom: 0px;
   padding-top: 10px;
+  width: 100vw;
+  text-align: center;
 }
 
 em {
@@ -24,5 +26,51 @@ input {
   border: 1px solid #3f3f3f;
   font: normal 200 1.125rem "Roboto";
   color: #3f3f3f;
-  padding-left: 15px;
+  padding-left: 20px;
+  padding-right: 53px;
+}
+
+.searcher {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-weight: 900;
+  font-size: 0.9rem;
+  width: 86px;
+  height: 52px;
+  border: 1px solid #6809e1;
+  background-image: url("/public/images/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #6809e1;
+  border: 1px solid #6809e1;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+  border-left: 0px;
+}
+
+.cancel {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 100px;
+}
+
+@media screen and (min-width: 360px) and (max-width:700px) {
+  h1 {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 340px;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 280px;
+  }
 }

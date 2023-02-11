@@ -1,0 +1,47 @@
+.autocomplete {
+  width: 628px;
+  position: absolute;
+  left: 0px;
+  top: 58px;
+  font: normal 200 1.125rem "Roboto";
+  color: #3f3f3f;
+  background-color: white;
+  border-radius: 20px;
+  border: solid #6809e1 1.5px;
+}
+
+.autocomplete li {
+  height: 50px;
+  border-bottom: solid 1.5px #c8cbcb;
+  cursor: pointer;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.autocomplete li img {
+  margin-right: 10px;
+}
+
+.autocomplete li:first-child {
+  border-bottom: solid 1.5px #c8cbcb;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.autocomplete li:last-child {
+  border-bottom: solid 1.5px #c8cbcb;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.autocomplete li:hover {
+  background-color: #e4e6e6;
+}
+
+@media screen and (min-width: 360px) and (max-width:700px) {
+  .autocomplete {
+    width: 370px;
+  }
+}

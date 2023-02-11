@@ -8,13 +8,46 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  border: solid black 1px;
 }
 
 .App {
+  height: 100vh;
   font: normal 100 16px "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+h2 {
+  font: normal 400 1.6rem "Roboto";
+  color: #572ee5;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .dark {
   background-color: #373737;
+}
+
+.dark h1,
+.dark h2 {
+  color: white;
+}
+
+.dark input {
+  border-color: white;
+  background-color: #373737;
+  color: white;
+}
+
+.dark footer,
+.dark main {
+  background-color: #373737;
+}
+
+@media screen and (min-width: 360px) and (max-width:700px) {
+  * {
+    font-size: 14px;
+  }
 }
